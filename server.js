@@ -1,4 +1,3 @@
-require("dotenv").config();
 const Express = require("express");
 const port = process.env.PORT || 4000;
 const routerAluno = require("./router/routerAluno");
