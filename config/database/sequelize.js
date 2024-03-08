@@ -1,8 +1,10 @@
 const { Sequelize } = require("sequelize");
-const config = require("../config").development;
+
+require(dotenv).config();
+
 try {
   const conexao = new Sequelize(process.env.DATA_BASE_URL, {
-    dialect: "postgres",
+    dialect: process.env.DIALECT,
     dialectOptions: {
       connectTimeout: 3000,
       ssl: {
