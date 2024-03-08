@@ -1,6 +1,6 @@
 const { Sequelize } = require("sequelize");
 
-require(dotenv).config();
+require("dotenv").config();
 
 try {
   const conexao = new Sequelize(process.env.DATA_BASE_URL, {
