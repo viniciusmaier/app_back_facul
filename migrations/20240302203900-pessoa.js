@@ -57,16 +57,10 @@ module.exports = {
     await queryInterface.changeColumn("pessoa", "email", {
       type: Sequelize.STRING,
       allowNull: false,
-      unique: true,
     });
   },
 
   down: async (queryInterface, Sequelize) => {
     queryInterface.dropTable("aluno");
-    queryInterface.changeColumn("pessoa", "ra", {
-      type: Sequelize.STRING,
-      allowNull: true,
-      unique: true,
-    });
   },
 };

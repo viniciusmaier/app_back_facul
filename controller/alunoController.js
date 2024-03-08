@@ -16,6 +16,7 @@ module.exports = {
         telefone2: envioAluno.telefone2,
         bo_aluno: true,
       });
+
       console.log("enviado com sucesso");
     } catch (err) {
       console.log(err);

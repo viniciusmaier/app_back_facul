@@ -17,4 +17,13 @@ module.exports = {
       console.log(err);
     }
   },
+  consultarProfessor: async (req, resp) => {
+    try {
+      const query = await Professor.findAll();
+      const resposta = JSON.stringify(query);
+      return resp.send(resposta).status(200);
+    } catch (err) {
+      console.log(err);
+    }
+  },
 };
