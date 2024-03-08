@@ -29,7 +29,7 @@ const Aluno = conexao.define(
       defaultValue: false,
     },
 
-    bo_cordenacao: {
+    bo_coordenacao: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
       defaultValue: false,
