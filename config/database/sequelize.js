@@ -9,6 +9,7 @@ try {
       connectTimeout: 3000,
       ssl: {
         require: "true",
+        rejectUnauthorized: false,
       },
     },
   });
