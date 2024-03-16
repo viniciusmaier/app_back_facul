@@ -22,7 +22,7 @@ module.exports = {
       console.log(err);
     }
   },
-  login: async (login) => {
-    console.log(login);
+  login: async (req, resp) => {
+    console.log(req.body);
   },
 };
