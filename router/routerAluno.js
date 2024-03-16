@@ -4,4 +4,6 @@ const routerAluno = require("express").Router();
 routerAluno.get("/aluno", alunoController.consultaTeste);
 routerAluno.post("/aluno", alunoController.cadastraAluno);
 
+routerAluno.get("/");
+
 module.exports = routerAluno;
