@@ -1,17 +1,22 @@
-const Professor = require("../models/pessoa");
+const Professor = require("../models/pessoaModel");
 module.exports = {
   cadastrarProfessor: async (req, resp) => {
     const envioProfessor = req.body;
     try {
-      await Professor.create({
-        nome: envioProfessor.nome,
-        ra: null,
-        email: envioProfessor.email,
-        password: envioProfessor.password,
-        telefone1: envioProfessor.telefone1,
-        telefone2: envioProfessor.telefone2,
+      const resp = Aluno.cadastrarUsuario({
+        nome: envioAluno.nome,
+        ra: envioAluno.ra,
+        email: envioAluno.email,
+        password: envioAluno.password,
+        telefone1: envioAluno.telefone1,
+        telefone2: envioAluno.telefone2,
+        bo_aluno: false,
         bo_professor: true,
-      });
+        bo_coordenacao: false,
+      }).then((resultado) =>
+        console.log(resultado).catch((err) => console.error(err))
+      );
+      resp.send(resp).status(200);
       console.log("enviado com sucesso");
     } catch (err) {
       console.log(err);
