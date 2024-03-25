@@ -1,4 +1,4 @@
-import dotenv from "dotenv";
+import dotenv from require("dotenv");
 dotenv.config();
 module.exports = {
   development: {
