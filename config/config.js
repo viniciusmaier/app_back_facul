@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-import dotenv from require("dotenv");
-=======
-const dotenv = require("dotenv");
->>>>>>> 03d72009b977f24c304684a9c34d12619b9c89d8
+
+import dotenv from "dotenv";
 dotenv.config();
 module.exports = {
   development: {
@@ -11,7 +8,7 @@ module.exports = {
     database: process.env.DB_DATABASE,
     host: process.env.DB_HOST,
     dialect: process.env.DIALECT,
-  },
+  },  
   // test: {
   //   username: USERNAME_DB_TEST,
   //   password: PASSWORD_DB_TEST,
