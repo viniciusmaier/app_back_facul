@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import dotenv from require("dotenv");
+=======
+const dotenv = require("dotenv");
+>>>>>>> 03d72009b977f24c304684a9c34d12619b9c89d8
 dotenv.config();
 module.exports = {
   development: {
