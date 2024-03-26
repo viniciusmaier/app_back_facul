@@ -1,4 +1,3 @@
-
 import dotenv from "dotenv";
 dotenv.config();
 module.exports = {
@@ -8,7 +7,7 @@ module.exports = {
     database: process.env.DB_DATABASE,
     host: process.env.DB_HOST,
     dialect: process.env.DIALECT,
-  },  
+  },
   // test: {
   //   username: USERNAME_DB_TEST,
   //   password: PASSWORD_DB_TEST,
