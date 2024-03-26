@@ -9,7 +9,7 @@
     "sequelize-cli": "^6.6.2"
   },
   "engines": {
-    "node": "16"
+    "node": "18"
   },
   "name": "app-unicv",
   "version": "1.0.0",
