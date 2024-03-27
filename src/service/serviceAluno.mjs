@@ -34,16 +34,16 @@ export default class serviceAluno {
       }
     }
 
-    dadosAluno.map(async (dado) => {
-      const cryptoPassword = await bcrypt.hash(dadosAluno.password, 10);
+    dadosAluno.forEach(async (dado) => {
+      const cryptoPassword = await bcrypt.hash(dado.password, 10);
       try {
         const resp = PessoaModel.cadastrarUsuario({
-          nome: dadosAluno.nome,
-          ra: dadosAluno.ra,
-          email: dadosAluno.email,
+          nome: dado.nome,
+          ra: dado.ra,
+          email: dado.email,
           password: cryptoPassword,
-          telefone1: dadosAluno.telefone1,
-          telefone2: dadosAluno.telefone2,
+          telefone1: dado.telefone1,
+          telefone2: dado.telefone2,
           bo_aluno: true,
           bo_professor: false,
           bo_coordenacao: false,
